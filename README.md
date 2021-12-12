@@ -8,3 +8,5 @@ Develop a Pneumonia Detection Application to classify Chest X-rays as either Pne
 3. Flask  
 4. Python  
 
+## Approach  
+Use transfer learning to fine tune Keras MobileNet and VGG16 models.  
