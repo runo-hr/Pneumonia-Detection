@@ -1,9 +1,9 @@
 # Pneumonia-Detection  
 
 ## Objective
-Develop a Pneumonia Detection Application to classify Chest X-rays as either Pneumonia or Normal.  
+Train a deep learning model to classify Chest X-rays as either Pneumonia or Normal. Deploy the model on a web service.   
 
-<blockquote>Status</blockquote>  
+<blockquote>Status: Developing the Portfolio website</blockquote>  
 
 ## Tech Stack  
 1. Tensorflow  
