@@ -1,7 +1,9 @@
 # Pneumonia-Detection  
-<blockquote>Status</blockquote>
+
 ## Objective
 Develop a Pneumonia Detection Application to classify Chest X-rays as either Pneumonia or Normal.  
+
+<blockquote>Status</blockquote>  
 
 ## Tech Stack  
 1. Tensorflow  
