@@ -3,7 +3,7 @@
 ## Objective
 Train a deep learning model to classify Chest X-rays as either Pneumonia or Normal. Deploy the model on a web service.   
 
-<blockquote>Status: Developing the Portfolio website</blockquote>  
+<blockquote>Status: Developing the web service </blockquote>  
 
 ## Tech Stack  
 1. Tensorflow  
