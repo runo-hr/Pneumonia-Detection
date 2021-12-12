@@ -7,6 +7,4 @@ Develop a Pneumonia Detection Web Application to classify Chest X-rays as either
 2. Keras  
 3. Flask  
 4. Python  
-5. HTML
-6. Bootstrap  
-7. 
+
