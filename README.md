@@ -14,4 +14,7 @@ Train a deep learning model to classify Chest X-rays as either Pneumonia or Norm
 ## Approach  
 Use transfer learning to fine tune Keras MobileNet and VGG16 models.  
 
-Deploy trained model on a flask web application. (In this case, a personal portfolio web application)
+Deploy trained model on a flask web application. (In this case, a personal portfolio web application)  
+
+### Dataset  
+<a href='https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia '> Chest X-Ray Images (Pneumonia) </a>
