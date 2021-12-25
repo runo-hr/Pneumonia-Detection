@@ -17,4 +17,11 @@ Use transfer learning to fine tune Keras MobileNet and VGG16 models.
 Deploy trained model on a flask web application. (In this case, a personal portfolio web application)  
 
 ### Dataset  
-<a href='https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia '> Chest X-Ray Images (Pneumonia) </a>
+<a href='https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia '> Chest X-Ray Images (Pneumonia) </a>  
+
+This Dataset has a total of 5856 images - 1583 Normal images, 4273 Pneumonia images.  
+The models were trained on two variations of the dataset.  
+<ol>
+  <li> Unbalanced Dataset (Half the full dataset) </li>
+
+</ol>
