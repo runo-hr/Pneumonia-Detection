@@ -34,10 +34,23 @@ The models were trained on two variations of the dataset.
       <ul>
         <li> 475 Train </li>
         <li> 238 Validation </li>
-        <li> 158  Test</li>
+        <li> 158 Test</li>
       </ul>
   </p>
    
   <li> Balanced Dataset  </li>
-
+  <p> 
+    Pneumonia:
+    <ul>
+      <li> 950  Train </li>
+      <li> 475  Validation </li>
+      <li> 158  Test</li>
+     </ul>
+    Normal:
+      <ul>
+        <li> 950 Train </li>
+        <li> 475 Validation </li>
+        <li> 158 Test</li>
+      </ul>
+  </p>
 </ol>
