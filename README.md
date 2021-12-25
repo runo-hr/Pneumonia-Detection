@@ -55,5 +55,5 @@ The models were trained on two variations of the dataset.
   </p>
 </ol>
 
-To organize the dataset use the files in the Organize Data directory at the top of this repository.  
+To organize the dataset use the files in the Organize Dataset directory at the top of this repository.  
 
