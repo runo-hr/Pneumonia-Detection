@@ -25,11 +25,11 @@ The models were trained on two variations of the dataset.
   <li> Unbalanced Dataset (Half the full dataset) </li>
   <p> 
     Pneumonia:
-    <ul>
-      <li> 1282 Train </li>
-      <li> 641  Validation </li>
-      <li> 158  Test</li>
-     </ul>
+      <ul>
+        <li> 1282 Train </li>
+        <li> 641  Validation </li>
+        <li> 158  Test</li>
+       </ul>
     Normal:
       <ul>
         <li> 475 Train </li>
@@ -41,11 +41,11 @@ The models were trained on two variations of the dataset.
   <li> Balanced Dataset  </li>
   <p> 
     Pneumonia:
-    <ul>
-      <li> 950  Train </li>
-      <li> 475  Validation </li>
-      <li> 158  Test</li>
-     </ul>
+      <ul>
+        <li> 950  Train </li>
+        <li> 475  Validation </li>
+        <li> 158  Test</li>
+       </ul>
     Normal:
       <ul>
         <li> 950 Train </li>
