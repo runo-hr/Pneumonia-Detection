@@ -23,5 +23,7 @@ This Dataset has a total of 5856 images - 1583 Normal images, 4273 Pneumonia ima
 The models were trained on two variations of the dataset.  
 <ol>
   <li> Unbalanced Dataset (Half the full dataset) </li>
+  Pneumonia
+  <li> Balanced Dataset  </li>
 
 </ol>
