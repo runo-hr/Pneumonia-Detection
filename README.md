@@ -1,5 +1,7 @@
 # Pneumonia-Detection  
-
+<blockquote>
+  README not complete. I will update soon.
+  </blockquote>
 ## Objective
 Train a deep learning model to classify Chest X-rays as either Pneumonia or Normal. Deploy the model on a web application.   
 
