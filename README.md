@@ -8,7 +8,7 @@ Train a deep learning model to classify Chest X-rays as either Pneumonia or Norm
 
 [methodology](methodology.jpeg)  
 
-
+https://github.com/runo-hr/Pneumonia-Detection/blob/main/methodology.jpeg?raw=true
 <blockquote>Status: Developing the web application. <a href='https://github.com/runo-hr/Flask'> Flask Web App </a> </blockquote>  
 
 ## Tech Stack  
