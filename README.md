@@ -6,7 +6,7 @@
 ## Objective
 Train a deep learning model to classify Chest X-rays as either Pneumonia or Normal. Deploy the model on a web application.   
 
-[methodology](C:\Users\HR\pycharm\projects\pneumonia-test\git\Pneumonia-Detection\methodology.jpeg )
+[methodology](methodology.jpeg)
 
 <blockquote>Status: Developing the web application. <a href='https://github.com/runo-hr/Flask'> Flask Web App </a> </blockquote>  
 
