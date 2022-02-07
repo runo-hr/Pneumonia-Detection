@@ -90,6 +90,28 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
 #### Deriving the answer  
 7. <b>In what way can the data be visualized to get to the answer that is required?</b>  
 
+    When transfer learning, one the main goals is to find the optimum number of layers to retrain so as to get get the most efficient model.  
+
+    Evaluation metrics for model efficacy are dependent on the dataset and desired results.  
+    One of the datasets we used for this exercise has imbalanced classes. We needed to compare the performance of a model trained on an imbalanced dataset with that trained on a balanced dataset.
+
+    As such, we chose F1-score as the evaluation metric. We did evaluate on accuracy, precision and recall but went with the F-score and here is why.  
+
+    Accuracy is only good when you have balanced classes.  
+
+    Precision is used when the desired outcome is predicting less false positives. Higher precision >> less false positives.  
+
+    Higer recall >> less false negatives.  
+
+    The F-score is a tradeoff between precision and recall.  
+
+    So, how to visualize?  
+    We trained a number of model variations on each of the datasets and made plots of F-scores against number of layers retrained.  
+    Here are the results.  
+
+    ![f-scores](/VGG16/images/f_scores.png)  
+
+
 
  
 
