@@ -7,6 +7,12 @@
 In this project, <a href='https://github.com/MargaretKagwiria'> Margaret Kagwiria </a> and I apply the Data Science Methodology in classifying
 chest X-rays as either Normal or belomging to a Pneumonia patient.  
 
+## Tech Stack  
+1. Tensorflow  
+2. Keras  
+3. Flask  
+4. Python 
+
 ## Data Science Methodologies  
 For this project, we applied the <b>Foundational Methodology</b> for Data Science by John Rollins. However, it is not the only methodology in data science.  
 In data mining, the <b>Cross Industry Process for Data Mining (CRISP-DM)</b> methodology is widely used.   
@@ -33,56 +39,59 @@ The intent is to take case specific scenarios and general behaviors to make them
 
 ![foundational-methodology](methodology.jpeg)  
 
+The methodology aims to answer the following questions.  
+#### From problem to approach  
+1. <b>What is the problem that you are trying to solve? </b>  
+Classify chest x-rays as either Normal of of a patient infected with Pneumonia.  
 
-## Tech Stack  
-1. Tensorflow  
-2. Keras  
-3. Flask  
-4. Python  
+2.  <b>How can you use data to answer the question? </b>  
+Use transfer learning to fine tune Keras MobileNet and VGG16 models to a dataset of chest x-ray images. 
 
-## Approach  
-Use transfer learning to fine tune Keras MobileNet and VGG16 models.  
+#### Working with the data
+3.  <b>What data do you need to answer the question </b>  
+Chest x-ray dataset with two categories; Normal and Pneumonia  
 
-Deploy trained model on a flask web application. (In this case, a personal portfolio web application)  
+4.  <b>Where is the data coming from (identify all sources) and how will you get it? </b>  
+Datasets can be found by either manually searching specific sites or by scraping different sources on the web.  
+A manual search is okay where datasets are readily available.  
+When the data required is not readily available, building a web scraper might be necessary.
+We used the manual search and found the following datasets:  
+    <ul>  
+      <li>
+      <a href='https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia '> Chest X-Ray images (Pneumonia) | Paul Mooney </a> We chose this dataset. 
+      </li>
+      <li>
+      <a href='https://www.kaggle.com/pcbreviglieri/pneumonia-xray-images '> Pneumonia X-Ray images | Paulo Breviglleri </a> Adaptation of Paul Mooney's Chest X-Ray.
+      </li>    
+      <li>
+      <a href='https://www.kaggle.com/andrewmvd/pediatric-pneumonia-chest-xray'> Paediatric Pneumonia Chest X-Rays </a> 
+      </li>
+      <li> 
+      <a href='https://www.kaggle.com/prashant268/chest-xray-covid19-pneumonia'> Chest x-rays COVID-19 and Pneumonia  </a> This has 3 categories; COVID-19, Pneumonia and Normal.  
+      </li>
+      <li>
+      <a href='https://www.kaggle.com/jtiptj/chest-xray-pneumoniacovid19tuberculosis'> Chest x-rays COVID-19, Tuberculosis and Pneumonia  </a>  
+      </li>
+      <li>
+      <a href='https://www.kaggle.com/balnyaupane/pneumonia-chest-xray-dataset-200-by-200-image'> Pneumonia_Chest _X-ray_Image_Dataset  </a>
+      </li>
+    </ul>
 
-### Dataset  
-<a href='https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia '> Chest X-Ray Images (Pneumonia) </a>  
+5. <b> Is the data collected representative of the problem to be solved?</b>  
+Yes. The data has images categorized into NORMAL and PNEUMONIA.  
 
+6. <b> What additional work is required to manipulate and work with the data?</b>  
+We redistributed the amount of observations for training and validation purposes to allow for a more balanced machine learning exercise.  
 This Dataset has a total of 5856 images - 1583 Normal images, 4273 Pneumonia images.  
-The models were trained on two variations of the dataset.  
-<ol>
-  <li> Unbalanced Dataset (Half the full dataset) </li>
-  <p> 
-    Pneumonia:
-      <ul>
-        <li> 1282 Train </li>
-        <li> 641  Validation </li>
-        <li> 158  Test</li>
-       </ul>
-    Normal:
-      <ul>
-        <li> 475 Train </li>
-        <li> 238 Validation </li>
-        <li> 158 Test</li>
-      </ul>
-  </p>
-   
-  <li> Balanced Dataset  </li>
-  <p> 
-    Pneumonia:
-      <ul>
-        <li> 950  Train </li>
-        <li> 475  Validation </li>
-        <li> 158  Test</li>
-       </ul>
-    Normal:
-      <ul>
-        <li> 950 Train </li>
-        <li> 475 Validation </li>
-        <li> 158 Test</li>
-      </ul>
-  </p>
-</ol>
+The models were trained on two variations of the dataset - Unbalanced and Balanced.    
+[Redistribute-images](/organize_dataset/organize_data.ipynb) creates the variations.  
+We also preprocessed the images as required to pass them to VGG16 and MobileNet models. This preproccessing step can be found here [mobilenet](/MobileNet/mobilenet.ipynb) and [vgg16](/vgg16/vgg16.ipynb)
 
-To organize the dataset use the files in the Organize Dataset directory at the top of this repository.  
+#### Deriving the answer  
+7. <b>In what way can the data be visualized to get to the answer that is required?</b>  
+
+
+ 
+
+
 
