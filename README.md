@@ -84,8 +84,8 @@ Yes. The data has images categorized into NORMAL and PNEUMONIA.
 We redistributed the amount of observations for training and validation purposes to allow for a more balanced machine learning exercise.  
 This Dataset has a total of 5856 images - 1583 Normal images, 4273 Pneumonia images.  
 The models were trained on two variations of the dataset - Unbalanced and Balanced.    
-[Redistribute-images](/organize_dataset/organize_data.ipynb) creates the variations.  
-We also preprocessed the images as required to pass them to VGG16 and MobileNet models. This preproccessing step can be found here [mobilenet](/MobileNet/mobilenet.ipynb) and [vgg16](/vgg16/vgg16.ipynb)
+[Redistribute-images](/Organize_Dataset/organize_data.ipynb) creates the variations.  
+We also preprocessed the images as required to pass them to VGG16 and MobileNet models. This preproccessing step can be found here [mobilenet](/MobileNet/mobilenet.ipynb) and [vgg16](/VGG16/vgg16.ipynb)
 
 #### Deriving the answer  
 7. <b>In what way can the data be visualized to get to the answer that is required?</b>  
