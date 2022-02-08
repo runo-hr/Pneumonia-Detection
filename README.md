@@ -97,19 +97,48 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
 
     As such, we chose F1-score as the evaluation metric. We did evaluate on accuracy, precision and recall but went with the F-score and here is why.  
 
-    Accuracy is only good when you have balanced classes.  
+    <b>Accuracy</b>   
+    <ul>
+      <li>Only good when you have balanced classes</li>   
+      <li>accuracy = correct predictictions / all predictions</li>  
+      a = (tp +tn)/(tp +tn +fp +fn)
+    </ul>
 
-    Precision is used when the desired outcome is predicting less false positives. Higher precision >> less false positives.  
+    <b>Precision</b> 
+    <ul>
+      <li>Higher precision >> less false positives.</li>   
+      <li>precision = true positives / predicted positives</li>  
+      p = tp / (tp + fp)
+    </ul>
 
-    Higer recall >> less false negatives.  
+    <b>Recall</b>
+    <ul>
+      <li>Higher recall >> less false negatives.</li>   
+      <li>recall = true positives / actual positives</li>  
+      p = tp / (tp + fn)
+    </ul>  
 
-    The F-score is a tradeoff between precision and recall.  
+    <b>F1-score</b>
+    <ul>
+      <li>Ttadeoff of recall and precision</li>   
+      <li>f1_score = 2 *(precision_score * recall_score)/ (precision_score + recall_score)</li>  
+    </ul>   
+
 
     So, how to visualize?  
+
     We trained a number of model variations on each of the datasets and made plots of F-scores against number of layers retrained.  
+    
     Here are the results.  
 
+    <b>VGG16 | Models trained on a balanced dataset vs Unbalanced dataset</b>
+
     ![f-scores](/VGG16/images/f_scores.png)  
+
+    <b>MobileNet | Models Trained on Unbalanced Dataset</b>  
+
+    ![f-scores](/MobileNet/images/evaluation_unbalanced.png)  
+
 
 
 
