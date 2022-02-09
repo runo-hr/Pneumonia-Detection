@@ -135,9 +135,27 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
 
     ![f-scores](/VGG16/images/f_scores.png)  
 
-    <b>MobileNet | Models Trained on Unbalanced Dataset</b>  
+    <b>MobileNet | Evaluation metrics of Models Trained on Unbalanced Dataset</b>  
 
-    ![f-scores](/MobileNet/images/evaluation_unbalanced.png)  
+    ![eval-metrics](/MobileNet/images/evaluation_unbalanced.png)  
+
+    <b>MobileNet | False Predictions against layers retrained </b>
+
+    ![false-preds](/MobileNet/images/false_preds_test.png)  
+
+    [view-false-predictions-data](/MobileNet/evaluation/test_results.xlsx)  
+
+    <em> Which model to choose? </em>  
+    Ideally we want a model that classifes all images in the test set. However, the models gives wrong predictions for some images.  
+    Different models give a different number of false positives and false negatives.  
+    Below is a filter of models with both false predictions false than or equal 4.  
+
+    ![false-preds-filter-4](/MobileNet/images/false_preds_filter_4.png)  
+
+    These models also have high f-scores. However its important to note that there are some models with  higher f-scores but are left out due to our filtration criteria.  
+    [Here](/MobileNet/evaluation/false_preds_fscore.csv) is a csv file of all the models, their false predictions and f-scores.
+
+
 
 
 
