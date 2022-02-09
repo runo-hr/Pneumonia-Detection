@@ -152,8 +152,14 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
     ![false-preds-filter-4](/MobileNet/images/false_preds_filter_4.png)  
 
     These models also have high f-scores. However its important to note that there are some models with  higher f-scores but are left out due to our filtration criteria.  
-    [Here](/MobileNet/evaluation/false_preds_fscore.csv) is a csv file of all the models, their false predictions and f-scores.
+    [Here](/MobileNet/evaluation/false_preds_fscore.csv) is a file of all the models, their false predictions and f-scores.
 
+8. <b>Does the model used really answer the initial question or does it need to be adjusted?</b>  
+Yes. The 5 variations of mobilenets filtered above give decent results on the test set.  
+Adjustments can be made for possible improvements on performance but for now let us proceed to deployment.  
+
+9. <b>Can you put the model into practice?</b>  
+Here we test the model(s) on data outside the scope of the dataset.  
 
 
 
