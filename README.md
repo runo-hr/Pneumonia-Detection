@@ -142,8 +142,7 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
     <b>MobileNet | False Predictions against layers retrained </b>
 
     ![false-preds](/MobileNet/images/false_preds_test.png)  
-
-    [view-false-predictions-data](/MobileNet/evaluation/test_results.xlsx)  
+ 
 
     <em> Which model to choose? </em>  
     Ideally we want a model that classifes all images in the test set. However, the models gives wrong predictions for some images.  
