@@ -133,15 +133,15 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
 
     <b>VGG16 | Models trained on a balanced dataset vs Unbalanced dataset</b>
 
-    ![f-scores](/VGG16/images/f_scores.png)  
+    ![f-scores](VGG16/images/f_scores.png)  
 
     <b>MobileNet | Evaluation metrics of Models Trained on Unbalanced Dataset</b>  
 
-    ![eval-metrics](/MobileNet/images/evaluation_unbalanced.png)  
+    ![eval-metrics](MobileNet/images/evaluation_unbalanced.png)  
 
     <b>MobileNet | False Predictions against layers retrained </b>
 
-    ![false-preds](/MobileNet/images/false_preds_test.png)  
+    ![false-preds](MobileNet/images/false_preds_test.png)  
  
 
     <em> Which model to choose? </em>  
@@ -149,10 +149,10 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
     Different models give a different number of false positives and false negatives.  
     Below is a filter of models with both false predictions false than or equal 4.  
 
-    ![false-preds-filter-4](/MobileNet/images/false_preds_filter_4.png)  
+    ![false-preds-filter-4](MobileNet/images/false_preds_filter_4.png)  
 
     These models also have high f-scores. However its important to note that there are some models with  higher f-scores but are left out due to our filtration criteria.  
-    [Here](/MobileNet/evaluation/false_preds_fscore.csv) is a file of all the models, their false predictions and f-scores.
+    [Here](MobileNet/evaluation/false_preds_fscore.csv) is a file of all the models, their false predictions and f-scores.
 
 8. <b>Does the model used really answer the initial question or does it need to be adjusted?</b>  
 Yes. The 5 variations of mobilenets filtered above give decent results on the test set.  
@@ -160,9 +160,29 @@ Adjustments can be made for possible improvements on performance but for now let
 
 9. <b>Can you put the model into practice?</b>  
 Here we test the model(s) on data outside the scope of the dataset.  
+The performance of all models was evaluated on 1500 Normal and 1500 Pneumonia images of <a href='https://www.kaggle.com/prashant268/chest-xray-covid19-pneumonia'> this dataset </a>.  
+Here are the results.  
+    
+    <b><em> False Predictions </em></b>  
 
+    ![false-preds](MobileNet/deployment/false_preds.png)
 
+    <b><em> Precision, Recall and F-score </em></b>  
+    ![deploy-metrics](MobileNet/deployment/deploy_metrics.png)  
 
+    Comparing the two plots, we can observe that when the F-score (in blue) is high, the number of false positives and false negatives is low.  
+    Below are all the models with false predictions of below or equal to 25 on each category.  
+    ![deploy-df](MobileNet/deployment/deploy_df_filter_25.png)  
+    [Here](MobileNet/deployment/deployment_results_with_metrics.csv) are the results for all the models.  
+
+10. <b>Can you get constructive feedback into answering the question?</b>  
+Yes! We can use data to train a deep learning model to correctly classify Chest x-rays as either Normal or Pneumonia.  
+9 model variations generalized well to new data outside the scope of the original dataset they were trained on.  
+Out of 3000 chest x-rays (1500 on each category), these models only had less than 25 wrong predictions on either category.  
+The F-scores of all these models were above 0.98.  
+
+## Whats next?  
+We will deploy one of the 9 models on a Flask web application for testing by third parties.  
 
 
  
