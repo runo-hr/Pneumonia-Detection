@@ -1,7 +1,4 @@
 # Pneumonia-Detection  
-<blockquote>
-  README not complete. I will update soon.
-  </blockquote>
 
 ## Overview
 In this project, <a href='https://github.com/MargaretKagwiria'> Margaret Kagwiria </a> and I apply the Data Science Methodology in classifying
