@@ -2,7 +2,7 @@
 
 ## Overview
 In this project, <a href='https://github.com/MargaretKagwiria'> Margaret Kagwiria </a> and I apply the Data Science Methodology in classifying
-chest X-rays as either Normal or belomging to a Pneumonia patient.  
+chest X-rays as either Normal or belonging to a Pneumonia patient.  
 
 ## Tech Stack  
 1. Tensorflow - Keras 
@@ -43,7 +43,7 @@ The methodology aims to answer the following questions.
 Classify chest x-rays as either Normal of of a patient infected with Pneumonia.  
 
 2.  <b>How can you use data to answer the question? </b>  
-Use transfer learning to fine tune Keras MobileNet and VGG16 models to a dataset of chest x-ray images. 
+Use transfer learning to tune Keras' MobileNet and VGG16 models to a dataset of chest x-ray images. 
 
 #### Working with the data
 3.  <b>What data do you need to answer the question </b>  
@@ -83,12 +83,12 @@ We redistributed the amount of observations for training and validation purposes
 This Dataset has a total of 5856 images - 1583 Normal images, 4273 Pneumonia images.  
 The models were trained on two variations of the dataset - Unbalanced and Balanced.    
 [Redistribute-images](/Organize_Dataset/organize_data.ipynb) creates the variations.  
-We also preprocessed the images as required to pass them to VGG16 and MobileNet models. This preproccessing step can be found here [mobilenet](/MobileNet/mobilenet.ipynb) and [vgg16](/VGG16/VGG16.ipynb)
+We also preprocessed the images as required to pass them to VGG16 and MobileNet models. This preproccessing step can be found in [mobilenet](/MobileNet/mobilenet.ipynb) and [vgg16](/VGG16/VGG16.ipynb)
 
 #### Deriving the answer  
 7. <b>In what way can the data be visualized to get to the answer that is required?</b>  
 
-    When transfer learning, one the main goals is to find the optimum number of layers to retrain so as to get get the most efficient model.  
+    A big part of transfer learning is to find the optimum number of layers to retrain so as to get get the most efficient model.  
 
     Evaluation metrics for model efficacy are dependent on the dataset and desired results.  
     One of the datasets we used for this exercise has imbalanced classes. We needed to compare the performance of a model trained on an imbalanced dataset with that trained on a balanced dataset.
@@ -143,9 +143,9 @@ We also preprocessed the images as required to pass them to VGG16 and MobileNet 
  
 
     <em> Which model to choose? </em>  
-    Ideally we want a model that classifes all images in the test set. However, the models gives wrong predictions for some images.  
+    Ideally we want a model that correctly classifes all images in the test set. However, the models gives wrong predictions for some images.  
     Different models give a different number of false positives and false negatives.  
-    Below is a filter of models with both false predictions false than or equal 4.  
+    Below is a filter of models with either false predictions less than or equal 4.  
 
     ![false-preds-filter-4](MobileNet/images/false_preds_filter_4.png)  
 
