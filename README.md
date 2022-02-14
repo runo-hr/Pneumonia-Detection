@@ -5,10 +5,11 @@ In this project, <a href='https://github.com/MargaretKagwiria'> Margaret Kagwiri
 chest X-rays as either Normal or belomging to a Pneumonia patient.  
 
 ## Tech Stack  
-1. Tensorflow  
-2. Keras  
-3. Flask  
-4. Python 
+1. Tensorflow - Keras 
+2. Pandas
+3. Matplotlib
+4. Flask  
+5. Python 
 
 ## Data Science Methodologies  
 For this project, we applied the <b>Foundational Methodology</b> for Data Science by John Rollins. However, it is not the only methodology in data science.  
